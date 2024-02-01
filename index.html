@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodigosQR</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js" type="text/javascript"></script>
+    <script defer src="codigo.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="formulario">
+            <div class="input-group">
+                <label>Ingrese un texto o una URL</label>
+                <input type="text" name="qr" id="qrtext" placeholder="texto o URL" required>
+            </div>
+
+            <div class="qr-img" id="qrcode">
+             <!-aqui el codigo QR-> 
+            </div>
+
+            <div class="input-group">
+                <input type="submit" value="Generate QR Code" id="submit-btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
